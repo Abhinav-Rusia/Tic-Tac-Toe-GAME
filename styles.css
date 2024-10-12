@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #39ff14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  font-size: 3.5rem;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  color: #a6c8ff;
+}
+
+.restart {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  font-family: "Sofadi One", serif;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.restart {
+    background-color: #4CAF50; /* Deep green */
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px; /* Smoother corner radius */
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+.restart:hover {
+    background-color: #45a049; /* Slightly darker green */
+    transform: translateY(-4px) scale(1.02); /* More noticeable lift */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Increased shadow for hover */
+}
+
+.restart:active {
+    transform: translateY(2px); /* Button press effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow on press */
+}
+
+#msg{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
